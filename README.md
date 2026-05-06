@@ -17,22 +17,22 @@ A CLIP text encoder with **18 cinematic camera movement presets** (dolly, pan, t
 
 ## 📺 Demo
 
-Cam1 - Pan Right
+#Cam1 - Pan Right#
 https://github.com/user-attachments/assets/c3892f65-2ec5-4c46-af32-f7f7dcb3670c
 
-Cam1 - Pan Left
+#Cam1 - Pan Left#
 https://github.com/user-attachments/assets/772e2a89-f7af-47ec-af5e-21fedeaa6d14
 
-Cam1 - Tilt Down
+#Cam1 - Tilt Down#
 https://github.com/user-attachments/assets/fb69cf0f-de43-4516-bb95-78b13d4bae63
 
-Cam1 - Tilt Up
+#Cam1 - Tilt Up#
 https://github.com/user-attachments/assets/91bafd94-c76e-4b40-92ad-a73c3dfb1b79
 
-Cam1 - Dolly In
+#Cam1 - Dolly In#
 https://github.com/user-attachments/assets/1191709a-0086-4beb-88a3-bfdef79d7808
 
-Cam1 - Dolly Out
+#Cam1 - Dolly Out#
 https://github.com/user-attachments/assets/5538fce8-7080-49c4-8f8a-312ddf1ee4ac
 
 
