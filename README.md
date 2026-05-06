@@ -17,7 +17,9 @@ A CLIP text encoder with **18 cinematic camera movement presets** (dolly, pan, t
 
 ## 📺 Demo
 
-<img width="320" height="320" alt="Cam1_Pan_Right_00001" src="https://github.com/user-attachments/assets/d4348b49-7d9e-487d-afd1-7c2aa4ce1f1b" />
+
+
+https://github.com/user-attachments/assets/358d1b33-df01-49fe-a242-9477bb2d8a5a
 
 https://github.com/user-attachments/assets/25b4a72c-b4b4-4a2d-9fac-91480583ac43
 
