@@ -328,22 +328,22 @@ class ClipTextEncodeCameraMovements:
                     "default": "a person standing in a field",
                 }),
                 # Row 2 – subject-aware movement
-                "camera_movement_subject_aware": (subject_aware_list, {
+                "Camera (0) (Subject Aware)": (subject_aware_list, {
                     "default": "None",
                 }),
                 # Row 3 – body-fixed movement  [NEW]
-                "camera_movement_body_fixed": (body_fixed_list, {
+                "Camera (1) (Natural Movement)": (body_fixed_list, {
                     "default": "None",
                 }),
                 # Blend between Row-2 and Row-3 prompts  [NEW]
                 # 0.0 = 100% Row-2 (subject-aware only)
                 # 1.0 = 100% Row-3 (body-fixed only)
                 # 0.5 = both descriptions included equally
-                "row_mix": ("FLOAT", {
-                    "default": 0.5,
+                "Choose Camera": ("FLOAT", {
+                    "default": 0.0,
                     "min": 0.0,
                     "max": 1.0,
-                    "step": 0.01,
+                    "step": 1.0,
                     "display": "slider",
                 }),
                 # Blend between user text and combined camera prompt
@@ -354,7 +354,7 @@ class ClipTextEncodeCameraMovements:
                     "default": 0.5,
                     "min": 0.0,
                     "max": 1.0,
-                    "step": 0.01,
+                    "step": 0.5,
                     "display": "slider",
                 }),
             },
@@ -446,15 +446,12 @@ class ClipTextEncodeCameraMovements:
             return f"{camera_prompt}, {text}"
 
     # ------------------------------------------------------------------
-    def encode(
-        self,
-        clip,
-        text: str,
-        camera_movement_subject_aware: str,
-        camera_movement_body_fixed: str,
-        row_mix: float,
-        concatenate: float,
-    ):
+    def encode(self, clip, text, concatenate, **kwargs):
+        # Extract the spaced/parenthesized parameter names from kwargs
+        camera_movement_subject_aware = kwargs.get("Camera (0) (Subject Aware)", "None")
+        camera_movement_body_fixed = kwargs.get("Camera (1) (Natural Movement)", "None")
+        row_mix = kwargs.get("Choose Camera", 0.0)
+
         # 1. Build blended camera prompt from Row 2 + Row 3
         camera_prompt = self._build_camera_prompt(
             camera_movement_subject_aware,
