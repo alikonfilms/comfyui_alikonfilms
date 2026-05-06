@@ -1,3 +1,6 @@
+
+
+
 # Clip Text Encode - Camera Movements
 
 A CLIP text encoder with **18 cinematic camera movement presets** (dolly, pan, tilt, zoom, orbit and more). Subject-aware and natural-movement modes, with a blend slider to mix your prompt with camera movements, and a live text output to preview the final prompt.
@@ -37,8 +40,6 @@ https://github.com/user-attachments/assets/e34c3b08-3e81-4402-807c-a310a4acb133
 
 https://github.com/user-attachments/assets/d94ec9fd-177d-4ed9-b5fd-9bf5b94125ab
 
-https://github.com/user-attachments/assets/6a06a96b-b738-43a4-9f7a-3c1c6fbaff53
-
 https://github.com/user-attachments/assets/a6441748-da09-4baf-9b55-df65b16570ba
 
 https://github.com/user-attachments/assets/9e518f12-97b9-42c4-827a-4954a2020d4e
@@ -48,6 +49,10 @@ https://github.com/user-attachments/assets/d7d06eea-2a52-487d-890e-539f89657e33
 https://github.com/user-attachments/assets/a5152434-35b9-4013-b2ae-faf9565d12f4
 
 https://github.com/user-attachments/assets/30cbdded-c555-4766-aa43-331d1d524e25
+
+https://github.com/user-attachments/assets/578ba99c-a959-4eea-bd83-cd78eb20b805
+
+https://github.com/user-attachments/assets/09e15e52-d313-4faf-bcc2-c1e36c325579
 
 
 
