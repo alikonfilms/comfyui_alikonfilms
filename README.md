@@ -18,7 +18,6 @@ A CLIP text encoder with **18 cinematic camera movement presets** (dolly, pan, t
 ## 📺 Demo
 
 
-
 https://github.com/user-attachments/assets/358d1b33-df01-49fe-a242-9477bb2d8a5a
 
 https://github.com/user-attachments/assets/25b4a72c-b4b4-4a2d-9fac-91480583ac43
@@ -26,6 +25,8 @@ https://github.com/user-attachments/assets/25b4a72c-b4b4-4a2d-9fac-91480583ac43
 https://github.com/user-attachments/assets/79cc489f-5e4b-48e2-9a35-566fa7607ab5
 
 https://github.com/user-attachments/assets/f05a6e75-03fa-48ba-b9fe-a4d36c6c3c5a
+
+https://github.com/user-attachments/assets/1191709a-0086-4beb-88a3-bfdef79d7808
 
 
 
