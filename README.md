@@ -1,3 +1,7 @@
+
+
+https://github.com/user-attachments/assets/9b434554-a3d0-4e64-92cb-40e5e845a091
+
 # Clip Text Encode - Camera Movements
 
 A CLIP text encoder with **18 cinematic camera movement presets** (dolly, pan, tilt, zoom, orbit and more). Subject-aware and natural-movement modes, with a blend slider to mix your prompt with camera movements, and a live text output to preview the final prompt.
@@ -17,16 +21,23 @@ A CLIP text encoder with **18 cinematic camera movement presets** (dolly, pan, t
 
 ## 📺 Demo
 
+Cam1 - Pan Right
+https://github.com/user-attachments/assets/c3892f65-2ec5-4c46-af32-f7f7dcb3670c
 
-https://github.com/user-attachments/assets/358d1b33-df01-49fe-a242-9477bb2d8a5a
+Cam1 - Pan Left
+https://github.com/user-attachments/assets/772e2a89-f7af-47ec-af5e-21fedeaa6d14
 
-https://github.com/user-attachments/assets/25b4a72c-b4b4-4a2d-9fac-91480583ac43
+Cam1 - Tilt Down
+https://github.com/user-attachments/assets/fb69cf0f-de43-4516-bb95-78b13d4bae63
 
-https://github.com/user-attachments/assets/79cc489f-5e4b-48e2-9a35-566fa7607ab5
+Cam1 - Tilt Up
+https://github.com/user-attachments/assets/91bafd94-c76e-4b40-92ad-a73c3dfb1b79
 
-https://github.com/user-attachments/assets/f05a6e75-03fa-48ba-b9fe-a4d36c6c3c5a
-
+Cam1 - Dolly In
 https://github.com/user-attachments/assets/1191709a-0086-4beb-88a3-bfdef79d7808
+
+Cam1 - Dolly Out
+https://github.com/user-attachments/assets/5538fce8-7080-49c4-8f8a-312ddf1ee4ac
 
 
 
