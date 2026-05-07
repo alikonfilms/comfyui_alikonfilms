@@ -1,14 +1,15 @@
-# Clip Text Encode - Camera Movements
+# ComfyUI-Clip-Text-Encode-Camera-Movements
 
-A CLIP text encoder with **18 cinematic camera movement presets** (dolly, pan, tilt, zoom, orbit and more). Subject-aware and natural-movement modes, with a blend slider to mix your prompt with camera movements, and a live text output to preview the final prompt.
+A CLIP text encoder with **17 cinematic camera movement presets** (dolly, pan, tilt, zoom, orbit and more). Each movement comes in two flavors — **Subject-Aware** (camera follows the subject) and **Natural Movement** (camera moves freely) — plus an **Experimental Mix** mode that combines both for unique compound shots.
 
 ---
 
 ## ✨ Features
 
-- 🎬 **18 cinematic camera movement presets** — Dolly, Pan, Tilt, Zoom, Orbit, Drone Shot, Handheld and more
+- 🎬 **17 cinematic camera movement presets** — Dolly, Pan, Tilt, Zoom, Orbit, Drone Shot, Handheld and more
 - 🎯 **Subject-Aware Camera** — keeps the subject in frame as the camera moves
 - 🌍 **Natural Camera Movement** — camera moves freely regardless of the subject
+- 🧪 **Experimental Mix** — combine both modes for unpredictable, creative compound shots
 - 🎚️ **Concatenate Slider** — blend your prompt with the camera movement (0, 0.5, or 1)
 - 👁️ **Live Text Output** — preview the final prompt before generation
 - ⚡ Designed for **image-to-video workflows**
@@ -17,59 +18,68 @@ A CLIP text encoder with **18 cinematic camera movement presets** (dolly, pan, t
 
 ## 📺 Demo
 
+> 💡 **A note on the demos:** The prompts used in the demo videos are intentionally minimal (e.g., *"a woman next to a window"*). This is on purpose — to showcase the camera movement itself without the prompt influencing or competing with the camera behavior. Each clip plays the **Subject-Aware** version on the left and the **Natural Movement** version on the right, side by side.
+
 ### Pan Right
-https://github.com/user-attachments/assets/c3892f65-2ec5-4c46-af32-f7f7dcb3670c
+https://github.com/user-attachments/assets/aa1120bd-71cd-4034-b66f-1b8a08ae0f4e
 
 ### Pan Left
-https://github.com/user-attachments/assets/772e2a89-f7af-47ec-af5e-21fedeaa6d14
+https://github.com/user-attachments/assets/46267f11-032c-46ef-91f2-af377fe31917
 
 ### Tilt Down
-https://github.com/user-attachments/assets/fb69cf0f-de43-4516-bb95-78b13d4bae63
+https://github.com/user-attachments/assets/8bac3c51-cdfa-45db-adbc-ca553bcbc63e
 
 ### Tilt Up
-https://github.com/user-attachments/assets/91bafd94-c76e-4b40-92ad-a73c3dfb1b79
+https://github.com/user-attachments/assets/67aa9c7d-39aa-4229-b948-8ae45e15d918
 
 ### Dolly In
-https://github.com/user-attachments/assets/1191709a-0086-4beb-88a3-bfdef79d7808
+https://github.com/user-attachments/assets/ae74d7a1-124a-4ab7-9ff3-7950fb567e9e
 
 ### Dolly Out
-https://github.com/user-attachments/assets/5538fce8-7080-49c4-8f8a-312ddf1ee4ac
+https://github.com/user-attachments/assets/9ae9444d-a790-41df-b99d-fdb079ec9b6a
 
 ### Dolly Left
-https://github.com/user-attachments/assets/738a565c-56fe-4b40-96cd-db9640d5996c
+https://github.com/user-attachments/assets/e68e135a-0feb-4b1b-ab92-59d1b83d9734
 
 ### Dolly Right
-https://github.com/user-attachments/assets/b737677b-a2aa-4f1c-a41c-f6dc34477756
+https://github.com/user-attachments/assets/88815c0a-3b71-4662-8e44-8ea722491e14
 
 ### Jib Up
-https://github.com/user-attachments/assets/e34c3b08-3e81-4402-807c-a310a4acb133
+https://github.com/user-attachments/assets/b91a0418-bb20-4a70-bccd-99142b43e637
 
 ### Jib Down
-https://github.com/user-attachments/assets/492fb8b7-5737-4410-93a8-9a24f8f8a064
+https://github.com/user-attachments/assets/45efe026-2262-45b2-9188-d3e8f2325cd6
 
 ### Orbit Around
-https://github.com/user-attachments/assets/d94ec9fd-177d-4ed9-b5fd-9bf5b94125ab
+https://github.com/user-attachments/assets/b746feac-da0f-42e4-b574-0c5885e0356b
 
 ### 360 Roll
-https://github.com/user-attachments/assets/a6441748-da09-4baf-9b55-df65b16570ba
+https://github.com/user-attachments/assets/758b352f-81d2-465c-8a75-b3e9b458477b
 
 ### Zoom In
-https://github.com/user-attachments/assets/9e518f12-97b9-42c4-827a-4954a2020d4e
+https://github.com/user-attachments/assets/11e52608-f39d-4ff4-a032-039b3c3928fe
 
 ### Zoom Out
-https://github.com/user-attachments/assets/d7d06eea-2a52-487d-890e-539f89657e33
-
-### Static
-https://github.com/user-attachments/assets/a5152434-35b9-4013-b2ae-faf9565d12f4
+https://github.com/user-attachments/assets/a50c1d90-db6b-406f-84ec-6d2d548b4d32
 
 ### Handheld
-https://github.com/user-attachments/assets/30cbdded-c555-4766-aa43-331d1d524e25
+https://github.com/user-attachments/assets/a4eb1dcf-34dc-428e-90ac-7cb9053c9699
 
 ### Camera Follows
-https://github.com/user-attachments/assets/578ba99c-a959-4eea-bd83-cd78eb20b805
+https://github.com/user-attachments/assets/3a8517f9-6fb9-4126-a448-9755c8812bfb
 
 ### Drone Shot
-https://github.com/user-attachments/assets/09e15e52-d313-4faf-bcc2-c1e36c325579
+https://github.com/user-attachments/assets/cd899cec-31a7-44ec-8ca5-94d683d19480
+
+---
+
+## 🧪 Experimental Mix Demos
+
+These clips show what happens when you set the **Camera Mode slider to 0.5** and combine a Subject-Aware movement with a Natural Movement at the same time. Results are intentionally unpredictable — sometimes the model produces beautiful compound shots, sometimes something unexpected.
+
+https://github.com/user-attachments/assets/d17bf46b-4acb-48ff-a6b4-2a0b00ecd023
+
+https://github.com/user-attachments/assets/c83bc227-36ac-4ba5-975c-6d24266ad4f9
 
 ---
 
@@ -97,20 +107,30 @@ Also available on the [Comfy Registry](https://registry.comfy.org/publishers/ali
 ## 🎛️ How to Use
 
 ### Concatenate slider
+Controls how the user prompt and the camera movement description are combined:
+
 | Value | Clip Text | Camera Movement |
 |-------|-----------|-----------------|
 | **0** | ✅ Enabled | ❌ Disabled |
 | **0.5** | ✅ Enabled | ✅ Enabled |
 | **1** | ❌ Disabled | ✅ Enabled |
 
-### Choose Camera slider
-Pick which camera mode to use:
+### Camera Mode slider
+The slider label updates dynamically as you change the value:
 
-- **(0) Subject-Aware** — the camera repositions to keep the subject in frame at all times
-- **(1) Natural Movement** — the camera moves as described regardless of where the subject is
+| Value | Label | Behavior |
+|-------|-------|----------|
+| **0** | **Subject Aware** | The view repositions to keep the subject in frame at all times |
+| **0.5** | **Experimental Mix** 🧪 | Combines both subject-aware and natural movement prompts |
+| **1** | **Natural Movement** | The view moves as described, regardless of the subject |
+
+### 🧪 About Experimental Mix
+Setting the slider to **0.5** activates Experimental Mix, which sends both the subject-aware and the natural-movement descriptions to the model at the same time. You can pick the same camera movement in both dropdowns, or mix two different ones — for example, **Pan Left** subject-aware + **Tilt Down** natural — to get unique compound shots.
+
+Results vary: sometimes you get amazing hybrid camera behavior, sometimes the model produces something unexpected. It's intentionally open-ended — meant for adventurous experimentation.
 
 ### Camera Movements available
-`Pan Left`, `Pan Right`, `Tilt Up`, `Tilt Down`, `Dolly In`, `Dolly Out`, `Dolly Left`, `Dolly Right`, `Jib Up`, `Jib Down`, `Orbit Around`, `360 Roll`, `Zoom In`, `Zoom Out`, `Static`, `Handheld`, `Camera Follows`, `Drone Shot`
+`Pan Left`, `Pan Right`, `Tilt Up`, `Tilt Down`, `Dolly In`, `Dolly Out`, `Dolly Left`, `Dolly Right`, `Jib Up`, `Jib Down`, `Orbit Around`, `360 Roll`, `Zoom In`, `Zoom Out`, `Handheld`, `Camera Follows`, `Drone Shot`
 
 ---
 
