@@ -2,8 +2,8 @@
  * Clip Text Encode - Camera Movements
  * Web UI Extension for ComfyUI
  *
- * Snaps the concatenate slider to 0, 0.5, or 1.
- * Snaps the row_mix slider to 0 or 1.
+ * Snaps concatenate slider to 0, 0.5, 1.
+ * Snaps "Choose Camera" slider to 0, 0.5, 1 with dynamic label.
  */
 
 import { app } from "../../scripts/app.js";
@@ -20,31 +20,46 @@ app.registerExtension({
             const result = originalCreated ? originalCreated.apply(this) : undefined;
 
             setTimeout(() => {
-                // ── Force-snap helper: replace widget value with getter/setter ──
-                const forceSnapWidget = (widget, snapFn) => {
-                    if (!widget) return;
-                    let internalValue = snapFn(widget.value);
+                const snapTriple = (v) => {
+                    if (v <= 0.25) return 0.0;
+                    if (v >= 0.75) return 1.0;
+                    return 0.5;
+                };
 
-                    Object.defineProperty(widget, "value", {
+                // ── Snap concatenate slider ────────────────────────────────
+                const concatWidget = this.widgets.find(w => w.name === "concatenate");
+                if (concatWidget) {
+                    let cv = snapTriple(concatWidget.value);
+                    Object.defineProperty(concatWidget, "value", {
+                        get() { return cv; },
+                        set(v) { cv = snapTriple(v); },
+                        configurable: true,
+                    });
+                }
+
+                // ── "Choose Camera" slider with dynamic label ──────────────
+                const rowMixWidget = this.widgets.find(w => w.name === "Choose Camera");
+                if (rowMixWidget) {
+                    let internalValue = snapTriple(rowMixWidget.value);
+
+                    const labelFor = (v) => {
+                        if (v === 0.0) return "Subject Aware";
+                        if (v === 1.0) return "Natural Movement";
+                        return "Experimental Mix";
+                    };
+
+                    Object.defineProperty(rowMixWidget, "value", {
                         get() { return internalValue; },
                         set(v) {
-                            internalValue = snapFn(v);
+                            internalValue = snapTriple(v);
+                            rowMixWidget.label = labelFor(internalValue);
                         },
                         configurable: true,
                     });
-                };
 
-                // ── Snap concatenate to 0, 0.5, or 1 ──────────────────────
-                const concatWidget = this.widgets.find(w => w.name === "concatenate");
-                forceSnapWidget(concatWidget, (val) => {
-                    if (val <= 0.25) return 0.0;
-                    if (val >= 0.75) return 1.0;
-                    return 0.5;
-                });
-
-                // ── Snap "Choose Camera" to 0 or 1 ────────────────────────
-                const rowMixWidget = this.widgets.find(w => w.name === "Choose Camera");
-                forceSnapWidget(rowMixWidget, (val) => val < 0.5 ? 0.0 : 1.0);
+                    // Set initial label
+                    rowMixWidget.label = labelFor(internalValue);
+                }
 
                 this.setSize(this.computeSize());
             }, 50);

@@ -27,121 +27,123 @@ SUBJECT_AWARE_MOVEMENTS = {
     "None": "",
 
     "Pan Right": (
-        "The camera performs a smooth horizontal sweep from left to right across the scene. "
-        "The subject and environment remain relatively stable while the view continuously moves "
-        "rightward, revealing more of what lies to the right and gradually removing the left side "
-        "of the frame from view."
+        "The view stays anchored on the subject as the perspective rotates horizontally to the right, "
+        "sweeping the scene from left to right across the frame. The subject remains centered and clearly "
+        "visible at all times while the surrounding environment shifts behind them, with new background "
+        "elements coming into view on the right as the left side gradually rotates out. The horizon stays "
+        "level throughout."
     ),
 
     "Pan Left": (
-        "The camera glides horizontally from right to left in a fluid sweeping motion. "
-        "The composition shifts gradually to reveal elements on the left side of the scene "
-        "while the right portion gradually exits the frame, creating a natural viewing progression."
+        "The view stays anchored on the subject as the perspective rotates horizontally to the left, "
+        "sweeping the scene from right to left across the frame. The subject remains centered and clearly "
+        "visible at all times while the surrounding environment shifts behind them, with new background "
+        "elements coming into view on the left as the right side gradually rotates out. The horizon stays "
+        "level throughout."
     ),
 
     "Tilt Up": (
-        "The camera rotates upward on its horizontal axis, transitioning the view from the "
-        "subject level toward the sky above. The subject gradually moves down in the frame "
-        "while more of the upper atmosphere and sky come into view, creating a sense of "
-        "looking upward."
+        "The view stays in one position while the perspective rotates upward, with the subject staying "
+        "centered in frame. The view starts at the subject's level and gradually tilts up to reveal what "
+        "is above, sweeping from the subject's level toward the sky."
     ),
 
     "Tilt Down": (
-        "The camera tilts downward on its horizontal axis, rotating from the current subject "
-        "view toward the ground below. The subject slowly rises in the frame as the camera "
-        "reveals more of what lies beneath, creating a downward gazing perspective."
+        "The view stays in one position while the perspective rotates downward, with the subject staying "
+        "centered in frame. The view starts at the subject's level and gradually tilts down to reveal what "
+        "is below, sweeping from the subject's level toward the ground."
     ),
 
     "Dolly In": (
-        "The camera moves forward toward the subject in a smooth pushing motion, getting "
-        "progressively closer. The subject enlarges in the frame while the surrounding "
-        "environment gradually falls away, creating an intimate approach that draws the "
-        "viewer closer to the focal point."
+        "The view moves smoothly forward through the scene, getting closer to the subject. The subject "
+        "stays centered and grows larger in the frame as the view advances toward it, while the surroundings "
+        "expand outward past the edges of the frame. The sense of depth deepens as the view glides forward."
     ),
 
     "Dolly Out": (
-        "The camera moves backward away from the subject, gradually increasing distance and "
-        "creating space. The subject shrinks in the frame as more of the surrounding "
-        "environment becomes visible, revealing the broader context and establishing shots."
+        "The view moves smoothly backward through the scene, pulling away from the subject. The subject "
+        "stays centered and shrinks in the frame as the view retreats, while more of the surrounding "
+        "environment gradually comes into the frame. The sense of space opens up as the view glides backward."
     ),
 
     "Dolly Left": (
-        "The camera glides laterally to the left while maintaining its forward-facing direction. "
-        "The scene slides rightward across the frame as the camera position moves left, "
-        "creating a sideways tracking motion that reveals new elements on the left while "
-        "pushing the right side away."
+        "The view slides smoothly to the left while continuing to face the same forward direction, "
+        "keeping the subject framed as it tracks alongside. The environment drifts to the right as the "
+        "view moves left, with foreground elements shifting faster than the background to reveal a "
+        "sense of depth."
     ),
 
     "Dolly Right": (
-        "The camera slides laterally to the right while keeping its facing direction constant. "
-        "The environment drifts leftward as the camera moves right, creating a smooth "
-        "side-to-side tracking motion that unveils new details on the right side of the composition."
+        "The view slides smoothly to the right while continuing to face the same forward direction, "
+        "keeping the subject framed as it tracks alongside. The environment drifts to the left as the "
+        "view moves right, with foreground elements shifting faster than the background to reveal a "
+        "sense of depth."
     ),
 
     "Jib Up": (
-        "The camera ascends vertically upward like a crane, maintaining its forward-facing angle "
-        "while rising. The subject and foreground remain relatively centered while the camera "
-        "gains altitude, revealing more of the overhead space and sky above the subject."
+        "The view rises smoothly upward through space while continuing to face the same direction, "
+        "with the subject staying in frame. The horizon rises in the frame, revealing more sky and less "
+        "ground. The subject stays in its original position and gradually moves lower in the frame as "
+        "the view ascends, eventually showing a top-down overhead view."
     ),
 
     "Jib Down": (
-        "The camera descends vertically downward like a descending crane, keeping its horizontal "
-        "facing direction stable. The camera lowers while the subject remains positioned ahead, "
-        "gradually revealing more ground and environmental details below."
+        "The view descends smoothly downward through space while continuing to face the same direction, "
+        "with the subject staying in frame. The horizon drops in the frame and more ground becomes "
+        "visible. The subject stays in its original position and gradually rises in the frame as the "
+        "view lowers, eventually revealing a low-angle ground-level view."
     ),
 
     "Orbit Around": (
-        "The camera rotates continuously around the subject in a complete circular orbit, "
-        "maintaining a consistent distance and always keeping the subject centered in the frame. "
-        "The background and surrounding environment rotate around the stationary subject, "
-        "creating a dynamic three-hundred-sixty-degree view."
+        "The view travels in a wide curving arc around the subject, sweeping at least halfway around "
+        "from one side to the other. The subject stays centered in the frame while the background "
+        "shifts dramatically behind them, revealing the subject from clearly different angles as the view "
+        "glides around. The motion is smooth and continuous, like circling around a statue to see it from "
+        "multiple sides."
     ),
 
     "360 Roll": (
-        "The camera rotates completely around its own forward-facing axis in a barrel roll "
-        "motion. The subject remains centered while the entire frame spins one full rotation, "
-        "creating a swirling effect where the horizon and environment rotate around the "
-        "central point."
+        "The entire scene rotates rapidly around the center of the frame, completing one full clockwise "
+        "revolution while the subject stays centered throughout. The horizon tilts sharply to the right, "
+        "becomes fully vertical, then completely inverts upside down with the sky now below and the ground "
+        "above, then continues rotating until vertical on the left side, and finally rights itself back to "
+        "level. The full inversion in the middle of the motion is essential — the scene is clearly flipped "
+        "upside down halfway through."
     ),
 
     "Zoom In": (
-        "The camera lens optically magnifies the subject without the camera moving from its "
-        "position. The subject enlarges progressively in the frame while the field of view "
-        "narrows, creating a magnified view that draws focus to details without any physical "
-        "camera movement."
+        "The view stays completely fixed in position while gradually pushing in closer to the subject, "
+        "smoothly and continuously throughout the entire shot. The subject stays centered and grows steadily "
+        "larger in the frame at a slow even pace, while the surrounding scene gradually disappears past the "
+        "edges. There is no movement through space — only a slow continuous zoom that progresses smoothly "
+        "from start to finish without any jumps or steps."
     ),
 
     "Zoom Out": (
-        "The camera lens optically widens its field of view without moving the camera itself. "
-        "The subject appears smaller in the frame as more of the surrounding environment "
-        "becomes visible, revealing context and establishing the broader spatial relationship."
-    ),
-
-    "Static": (
-        "The camera remains locked in a fixed, stationary position throughout the shot. "
-        "There is no camera movement of any kind, no pans, tilts, zooms, or adjustments. "
-        "The frame stays completely stable and unchanging, maintaining one consistent perspective."
+        "The view stays entirely stationary in position while gradually pulling back from the subject, "
+        "smoothly and continuously throughout the entire shot. The subject stays centered and grows steadily "
+        "smaller in the frame at a slow even pace, while more of the surrounding scene gradually comes into "
+        "view from the edges. There is no movement through space — only a slow continuous zoom out that "
+        "progresses smoothly from start to finish without any jumps or steps."
     ),
 
     "Handheld": (
-        "The camera is held by a person, resulting in subtle, organic micro-movements and "
-        "natural vibrations. There are minor drifts, gentle sways, and slight jittering that "
-        "create an authentic handheld feel without being distractingly shaky, suggesting a "
-        "documentary or intimate cinematic approach."
+        "The view has subtle organic movement, as if held by a person walking gently or breathing, while "
+        "keeping the subject roughly framed. Small natural sways, micro-tremors, and gentle drifts give the "
+        "frame a human, lived-in quality. These movements are small and natural, not deliberate tracking."
     ),
 
     "Camera Follows": (
-        "The camera smoothly tracks alongside and follows the subject as it moves through "
-        "the environment. The subject remains consistently positioned in the frame as the "
-        "camera moves in sync with the subject's motion, creating a dynamic tracking shot "
-        "that maintains focus on the moving subject."
+        "The view moves smoothly through space to keep up with the subject as it moves. The view glides "
+        "alongside, behind, or in front of the subject, adjusting its direction as needed to keep the "
+        "subject centered in the frame. The motion of the view matches the pace and direction of the subject."
     ),
 
     "Drone Shot": (
-        "The camera mounted on an aerial drone moves upward and backward simultaneously, "
-        "gaining altitude and distance from the subject. The perspective shifts from a "
-        "frontal view to an elevated aerial angle, revealing the expansive landscape and "
-        "contextual environment from above."
+        "The view rises smoothly straight up into the air, gaining altitude while keeping the subject "
+        "framed below. The ground recedes and the horizon opens up wider as the view climbs higher. The "
+        "subject stays in its original position and the scene is revealed from an increasingly aerial "
+        "vantage point, with the landscape spreading out below."
     ),
 }
 
@@ -157,146 +159,116 @@ BODY_FIXED_MOVEMENTS = {
     "None": "",
 
     "Pan Right": (
-        "The camera body is completely stationary and locked in place. Only the camera head "
-        "rotates horizontally to the right, sweeping the lens from the current angle toward "
-        "the right side. The pivot point stays fixed; no lateral translation occurs. "
-        "The field of view pans purely from left to right as if the camera were mounted on "
-        "a fixed tripod head rotating on its vertical axis."
+        "The view stays fixed in one position while the perspective rotates horizontally to the right. "
+        "The scene sweeps from left to right across the frame, revealing what was previously off-screen "
+        "on the right side as elements gradually exit on the left. The horizon stays level throughout."
     ),
 
     "Pan Left": (
-        "The camera body remains perfectly still and fixed in position. The camera head "
-        "rotates horizontally to the left, turning the lens from its current angle toward "
-        "the left side. Pure rotational pan with zero lateral movement; the tripod or mount "
-        "does not move. The field of view sweeps from right to left around the fixed vertical axis."
+        "The view stays fixed in one position while the perspective rotates horizontally to the left. "
+        "The scene sweeps from right to left across the frame, revealing what was previously off-screen "
+        "on the left side as elements gradually exit on the right. The horizon stays level throughout."
     ),
 
     "Tilt Down": (
-        "The camera body is completely immobile and anchored in place. The camera head tilts "
-        "downward on its horizontal axis, rotating the lens from the current level toward the "
-        "ground. Starting at face or mid-body level, the view descends from head to torso to "
-        "waist to feet, following the body downward. No vertical body movement occurs whatsoever; "
-        "only the lens rotates down on the fixed tilt axis. The subject fills the frame "
-        "top-to-bottom as the view descends steadily."
+        "The view stays fixed in one position while the perspective rotates downward. The view starts at "
+        "upper or eye level and gradually tilts down to reveal what is below, sweeping from above toward "
+        "the ground."
     ),
 
     "Tilt Up": (
-        "The camera body stays completely fixed and does not rise or lower at all. The camera "
-        "head tilts upward on its horizontal axis, rotating the lens from the current level "
-        "toward the sky. Starting near the ground or subject base, the view ascends upward "
-        "revealing more of the subject from feet to face to the sky above. Pure rotational "
-        "tilt with no vertical body translation whatsoever."
+        "The view stays fixed in one position while the perspective rotates upward. The view starts at "
+        "lower or ground level and gradually tilts up to reveal what is above, sweeping from below toward "
+        "the sky."
     ),
 
     "Dolly In": (
-        "The camera body moves forward along the ground plane directly toward the subject, "
-        "closing the physical distance. The lens direction stays constant and aimed at the "
-        "subject throughout. The subject grows larger due to physical proximity, not optical "
-        "zoom. Depth-of-field shifts noticeably as the camera approaches. Background "
-        "compression increases as the camera physically advances forward."
+        "The view moves smoothly forward through the scene, getting closer to the subject. The subject "
+        "grows larger in the frame as the view advances toward it, while the surroundings expand outward "
+        "past the edges of the frame. The sense of depth deepens as the view glides forward."
     ),
 
     "Dolly Out": (
-        "The camera body moves backward along the ground plane, increasing the physical "
-        "distance from the subject. The lens remains aimed in the same direction as the "
-        "camera retreats. The subject shrinks in the frame due to actual distance increase, "
-        "not zoom. The environment around the subject expands into view as the camera "
-        "physically withdraws."
+        "The view moves smoothly backward through the scene, pulling away from the subject. The subject "
+        "shrinks in the frame as the view retreats, while more of the surrounding environment gradually "
+        "comes into the frame. The sense of space opens up as the view glides backward."
     ),
 
     "Dolly Left": (
-        "The camera body slides purely laterally to the left along the ground, maintaining "
-        "its forward-facing direction without rotating. The camera does not pan or turn; "
-        "it only translates sideways. The subject shifts toward the right side of the frame "
-        "as the camera moves left. Strong parallax effect: near objects move faster across "
-        "frame than far objects, revealing scene depth."
+        "The view moves smoothly to the left while continuing to face the same forward direction. "
+        "Everything in the scene appears to slide to the right as the view glides leftward. Objects "
+        "close to the foreground shift across the frame faster than distant objects, creating a sense "
+        "of depth and lateral motion."
     ),
 
     "Dolly Right": (
-        "The camera body slides purely laterally to the right along the ground without any "
-        "rotation or turning. The lens stays aimed in the same forward direction throughout. "
-        "The subject drifts toward the left side of the frame as the camera translates right. "
-        "Classic parallax tracking: foreground elements move faster than background, "
-        "emphasizing scene depth."
+        "The view moves smoothly to the right while continuing to face the same forward direction. "
+        "Everything in the scene appears to slide to the left as the view glides rightward. Objects "
+        "close to the foreground shift across the frame faster than distant objects, creating a sense "
+        "of depth and lateral motion."
     ),
 
     "Jib Up": (
-        "The camera body rises vertically upward while its lens angle remains fixed and does "
-        "not compensate by tilting down. The camera gains height and the horizon rises in "
-        "frame, revealing more sky and less ground. The subject gradually moves lower in the "
-        "frame as the camera ascends, eventually showing a top-down overhead perspective "
-        "without any lens re-aiming."
+        "The view rises smoothly upward through space while continuing to face the same direction. "
+        "The horizon rises in the frame, revealing more sky and less ground. The subject gradually "
+        "moves lower in the frame as the view ascends, eventually showing a top-down overhead view."
     ),
 
     "Jib Down": (
-        "The camera body descends vertically downward while keeping its lens angle constant "
-        "and not tilting up to compensate. As the camera lowers, the horizon descends in "
-        "frame and more ground becomes visible. The subject gradually rises in the frame as "
-        "the camera drops, eventually revealing a worm's-eye low-angle view without any "
-        "lens adjustment."
+        "The view descends smoothly downward through space while continuing to face the same direction. "
+        "The horizon drops in the frame and more ground becomes visible. The subject gradually rises in "
+        "the frame as the view lowers, eventually revealing a low-angle ground-level view."
     ),
 
     "Orbit Around": (
-        "The camera body travels in a perfect circle around a fixed central point, maintaining "
-        "a constant radius. The lens is always aimed inward at the center point but the body "
-        "physically moves around it. This is a pure translation orbit: the camera position "
-        "moves through an arc while the lens rotates to maintain aim. The subject at center "
-        "is seen from progressively different angles as the camera circles."
+        "The view travels in a wide curving arc around the subject, sweeping at least halfway around "
+        "from one side to the other. The subject stays roughly centered in the frame while the background "
+        "shifts dramatically behind them, revealing the subject from clearly different angles as the view "
+        "glides around. The motion is smooth and continuous, like circling around a statue to see it from "
+        "multiple sides."
     ),
 
     "360 Roll": (
-        "The camera body rotates around its own optical axis, performing a complete barrel "
-        "roll. The lens direction stays pointed the same way but the camera itself rotates "
-        "360 degrees around that axis. The horizon spins from level to tilted to inverted "
-        "and back to level. The center of frame stays consistent while everything rotates "
-        "around it."
+        "The entire scene rotates rapidly around the center of the frame, completing one full clockwise "
+        "revolution. The horizon tilts sharply to the right, becomes fully vertical, then completely "
+        "inverts upside down with the sky now below and the ground above, then continues rotating until "
+        "vertical on the left side, and finally rights itself back to level. The full inversion in the "
+        "middle of the motion is essential — the scene is clearly flipped upside down halfway through."
     ),
 
     "Zoom In": (
-        "The camera body stays completely fixed in position. The focal length of the lens "
-        "is optically increased, magnifying the view. This is a pure lens operation with "
-        "zero physical camera movement. The subject appears larger due to optical magnification "
-        "only. Background compression increases and depth of field narrows as focal length "
-        "increases. Distinct from dolly-in as no spatial translation occurs."
+        "The view stays completely fixed in position while gradually pushing in closer to the subject, "
+        "smoothly and continuously throughout the entire shot. The subject grows steadily larger in the "
+        "frame at a slow even pace, while the surrounding scene gradually disappears past the edges. "
+        "There is no movement through space — only a slow continuous zoom that progresses smoothly from "
+        "start to finish without any jumps or steps."
     ),
 
     "Zoom Out": (
-        "The camera body remains entirely stationary in space. The focal length of the lens "
-        "is optically decreased, widening the field of view. Pure lens operation, no physical "
-        "movement of the camera. The subject appears smaller as the widening view encompasses "
-        "more of the scene. Background expands into frame. Distinct from dolly-out as the "
-        "camera does not physically move backward."
-    ),
-
-    "Static": (
-        "The camera body and lens are both completely locked. There is absolutely no movement "
-        "of any kind: no pan, no tilt, no zoom, no translation, no rotation. The frame is "
-        "perfectly still as if the camera were bolted in concrete. Every element in the scene "
-        "stays at its exact pixel position for the entire shot."
+        "The view stays entirely stationary in position while gradually pulling back from the subject, "
+        "smoothly and continuously throughout the entire shot. The subject grows steadily smaller in the "
+        "frame at a slow even pace, while more of the surrounding scene gradually comes into view from "
+        "the edges. There is no movement through space — only a slow continuous zoom out that progresses "
+        "smoothly from start to finish without any jumps or steps."
     ),
 
     "Handheld": (
-        "The camera is physically held by a human operator, introducing subtle organic "
-        "imperfections: micro-tremors from breathing and heartbeat, gentle sways from weight "
-        "shifting, occasional small drifts and micro-corrections. These movements are small "
-        "and human-scale. The camera does not track or follow the subject intentionally; "
-        "any subject framing changes are incidental to the natural body movement of the operator."
+        "The view has subtle organic movement, as if held by a person walking gently or breathing. "
+        "Small natural sways, micro-tremors, and gentle drifts give the frame a human, lived-in quality. "
+        "These movements are small and natural, not deliberate tracking. The framing wobbles slightly "
+        "without following the subject intentionally."
     ),
 
     "Camera Follows": (
-        "The camera body physically moves through space to track and follow the subject as it "
-        "moves. The camera translates laterally, forward, or backward to keep pace with the "
-        "subject. The lens direction adjusts as needed to maintain aim on the moving subject. "
-        "This is a physical tracking movement where the camera body travels alongside "
-        "the subject through the environment."
+        "The view moves smoothly through space to keep up with the subject as it moves. The view glides "
+        "alongside, behind, or in front of the subject, adjusting its direction as needed to keep the "
+        "subject in frame. The motion of the view matches the pace and direction of the subject."
     ),
 
     "Drone Shot": (
-        "The camera is mounted on an aerial drone that rises straight up vertically from its "
-        "current position. The lens points downward or forward and does not change angle as "
-        "the drone ascends. The ground recedes below and the horizon expands outward as "
-        "altitude increases. The drone body rises while the lens direction stays fixed "
-        "relative to the drone body, revealing the landscape from an increasingly aerial perspective."
+        "The view rises smoothly straight up into the air, gaining altitude. The ground recedes below "
+        "and the horizon opens up wider as the view climbs higher. The scene is revealed from an "
+        "increasingly aerial vantage point, with the landscape spreading out below."
     ),
 }
 
@@ -335,15 +307,15 @@ class ClipTextEncodeCameraMovements:
                 "Camera (1) (Natural Movement)": (body_fixed_list, {
                     "default": "None",
                 }),
-                # Blend between Row-2 and Row-3 prompts  [NEW]
-                # 0.0 = 100% Row-2 (subject-aware only)
-                # 1.0 = 100% Row-3 (body-fixed only)
-                # 0.5 = both descriptions included equally
+                # Choose Camera (Row 2 vs Row 3)
+                # 0.0   = Subject-Aware only (Camera 0)
+                # 1.0   = Natural Movement only (Camera 1)
+                # 0.5   = Experimental — both combined (subject-aware first)
                 "Choose Camera": ("FLOAT", {
                     "default": 0.0,
                     "min": 0.0,
                     "max": 1.0,
-                    "step": 1.0,
+                    "step": 0.5,
                     "display": "slider",
                 }),
                 # Blend between user text and combined camera prompt
@@ -392,22 +364,16 @@ class ClipTextEncodeCameraMovements:
         if not bf_prompt:
             return sa_prompt
 
-        # Pure Row-2
+        # Pure Row-2 (Subject-Aware only)
         if row_mix == 0.0:
             return sa_prompt
 
-        # Pure Row-3
+        # Pure Row-3 (Natural Movement only)
         if row_mix == 1.0:
             return bf_prompt
 
-        # Blend: include both descriptions.
-        # Order by dominant side so the stronger description leads.
-        if row_mix <= 0.5:
-            # Subject-aware is dominant → put it first
-            return f"{sa_prompt} {bf_prompt}"
-        else:
-            # Body-fixed is dominant → put it first
-            return f"{bf_prompt} {sa_prompt}"
+        # 0.5 = Experimental mode — both combined, subject-aware first
+        return f"{sa_prompt} {bf_prompt}"
 
     # ------------------------------------------------------------------
     def _build_full_prompt(
