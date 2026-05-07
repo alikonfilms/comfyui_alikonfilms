@@ -1,12 +1,12 @@
-# Clip Text Encode - Camera Movements
+# ComfyUI-Clip-Text-Encode-Camera-Movements
 
-A CLIP text encoder with **18 cinematic camera movement presets** (dolly, pan, tilt, zoom, orbit and more). Subject-aware and natural-movement modes, plus an experimental mix mode that combines both for unique compound shots.
+A CLIP text encoder with **17 cinematic camera movement presets** (dolly, pan, tilt, zoom, orbit and more). Each movement comes in two flavors — **Subject-Aware** (camera follows the subject) and **Natural Movement** (camera moves freely) — plus an **Experimental Mix** mode that combines both for unique compound shots.
 
 ---
 
 ## ✨ Features
 
-- 🎬 **18 cinematic camera movement presets** — Dolly, Pan, Tilt, Zoom, Orbit, Drone Shot, Handheld and more
+- 🎬 **17 cinematic camera movement presets** — Dolly, Pan, Tilt, Zoom, Orbit, Drone Shot, Handheld and more
 - 🎯 **Subject-Aware Camera** — keeps the subject in frame as the camera moves
 - 🌍 **Natural Camera Movement** — camera moves freely regardless of the subject
 - 🧪 **Experimental Mix** — combine both modes for unpredictable, creative compound shots
@@ -17,6 +17,8 @@ A CLIP text encoder with **18 cinematic camera movement presets** (dolly, pan, t
 ---
 
 ## 📺 Demo
+
+> 💡 **A note on the demos:** The prompts used in the demo videos are intentionally minimal (e.g., *"a woman next to a window"*). This is on purpose — to showcase the camera movement itself without the prompt influencing or competing with the camera behavior. Each clip plays the **Subject-Aware** version on the left and the **Natural Movement** version on the right, side by side.
 
 ### Pan Right
 https://github.com/user-attachments/assets/aa1120bd-71cd-4034-b66f-1b8a08ae0f4e
@@ -69,8 +71,14 @@ https://github.com/user-attachments/assets/3a8517f9-6fb9-4126-a448-9755c8812bfb
 ### Drone Shot
 https://github.com/user-attachments/assets/cd899cec-31a7-44ec-8ca5-94d683d19480
 
-### Experimental
+---
+
+## 🧪 Experimental Mix Demos
+
+These clips show what happens when you set the **Camera Mode slider to 0.5** and combine a Subject-Aware movement with a Natural Movement at the same time. Results are intentionally unpredictable — sometimes the model produces beautiful compound shots, sometimes something unexpected.
+
 https://github.com/user-attachments/assets/d17bf46b-4acb-48ff-a6b4-2a0b00ecd023
+
 https://github.com/user-attachments/assets/c83bc227-36ac-4ba5-975c-6d24266ad4f9
 
 ---
@@ -99,13 +107,15 @@ Also available on the [Comfy Registry](https://registry.comfy.org/publishers/ali
 ## 🎛️ How to Use
 
 ### Concatenate slider
+Controls how the user prompt and the camera movement description are combined:
+
 | Value | Clip Text | Camera Movement |
 |-------|-----------|-----------------|
 | **0** | ✅ Enabled | ❌ Disabled |
 | **0.5** | ✅ Enabled | ✅ Enabled |
 | **1** | ❌ Disabled | ✅ Enabled |
 
-### Camera mode slider
+### Camera Mode slider
 The slider label updates dynamically as you change the value:
 
 | Value | Label | Behavior |
@@ -120,7 +130,7 @@ Setting the slider to **0.5** activates Experimental Mix, which sends both the s
 Results vary: sometimes you get amazing hybrid camera behavior, sometimes the model produces something unexpected. It's intentionally open-ended — meant for adventurous experimentation.
 
 ### Camera Movements available
-`Pan Left`, `Pan Right`, `Tilt Up`, `Tilt Down`, `Dolly In`, `Dolly Out`, `Dolly Left`, `Dolly Right`, `Jib Up`, `Jib Down`, `Orbit Around`, `360 Roll`, `Zoom In`, `Zoom Out`, `Static`, `Handheld`, `Camera Follows`, `Drone Shot`
+`Pan Left`, `Pan Right`, `Tilt Up`, `Tilt Down`, `Dolly In`, `Dolly Out`, `Dolly Left`, `Dolly Right`, `Jib Up`, `Jib Down`, `Orbit Around`, `360 Roll`, `Zoom In`, `Zoom Out`, `Handheld`, `Camera Follows`, `Drone Shot`
 
 ---
 
