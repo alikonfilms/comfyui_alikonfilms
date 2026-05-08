@@ -88,7 +88,7 @@ https://github.com/user-attachments/assets/c83bc227-36ac-4ba5-975c-6d24266ad4f9
 ### Option 1 — ComfyUI-Manager (recommended)
 1. Open ComfyUI-Manager
 2. Click **Custom Nodes Manager**
-3. Search for `comfyui_alikonfilms`
+3. Search for `comfyui-alikonfilms`
 4. Click **Install**
 5. Restart ComfyUI
 
